@@ -29,7 +29,7 @@
 
 body {
     font-family: 'Manrope', system-ui;
-    line-height: 1.6;
+    line-height: 1.4;
     background-color: var(--clr-bg);
 }
 
@@ -50,10 +50,20 @@ span {
     width: 100%;
     padding-inline: 1rem;
     margin: 0 auto;
-
     @media (width > 1400px) {
-        max-width: 1320px;
+        max-width: 1100px;
     }
+}
+
+.d4 {
+    font-size: 3.5rem;
+    margin-top: 7rem;
+}
+
+.text-lg {
+    font-size: 1rem;
+    color: var(--clr-body-text);
+    /* margin-top: 1rem; */
 }
 
 .flex {
@@ -79,10 +89,12 @@ span {
 
 
 /* NAVBAR START */
-.main-nav .container {
-    justify-content: space-between;
-    padding-block: 0.7rem;
-
+.main-nav {
+    .container {
+        /* position: relative; */
+        justify-content: space-between;
+        padding-block: 0.7rem;
+    }
 }
 
 .nav-link {
@@ -90,4 +102,62 @@ span {
     font-weight: 600;
     padding-left: 2rem;
 }
+
+.nav-link:hover {
+    color: var(--clr-primary);
+}
 /* NAVBAR END */
+
+/* SHOWCASE START */
+.showcase {
+    background-image: linear-gradient(to top, rgba(99, 101, 241, 0.1), rgba(219, 70, 239, 0.05) 45%, rgba(241, 244, 253, 0.07) 83%);
+    position: relative; 
+    .hero {
+        
+        position: relative;
+        /* background-color: #33354D; */
+        height: 600px;
+
+        .hero-text{
+            font-size: 3rem;
+            color: var(--clr-heading);
+        }
+    }
+    .content {
+        position: absolute;
+        margin-top: 7rem;
+        left: 5px;
+
+    }
+    .store-btn {
+        /* display: flex; */
+        /* background-color: transparent; */
+        /* width: 100%; */
+        padding: 3em 1.75em 0 0;
+        /* padding-left: 0; */
+        
+    }
+   
+    .phone-img-container {
+        display: block;
+        width: 550px;
+        /* background-color: gray; */
+
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        img {
+            width: 100%;
+        }
+    }
+   
+    .more {
+        margin-top: 8rem;
+    }
+}
+
+.phone-img-container {
+    /* position: absolute; */
+}
+
+/* SHOWCASE END */

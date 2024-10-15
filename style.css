@@ -63,7 +63,7 @@ span {
 .text-lg {
     font-size: 1rem;
     color: var(--clr-body-text);
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
 }
 
 .flex {
@@ -108,14 +108,14 @@ span {
 }
 /* NAVBAR END */
 
+
 /* SHOWCASE START */
 .showcase {
     background-image: linear-gradient(to top, rgba(99, 101, 241, 0.1), rgba(219, 70, 239, 0.05) 45%, rgba(241, 244, 253, 0.07) 83%);
     position: relative; 
+
     .hero {
-        
         position: relative;
-        /* background-color: #33354D; */
         height: 600px;
 
         .hero-text{
@@ -123,21 +123,38 @@ span {
             color: var(--clr-heading);
         }
     }
+
     .content {
         position: absolute;
         margin-top: 7rem;
         left: 5px;
+    }
 
-    }
     .store-btn {
-        /* display: flex; */
-        /* background-color: transparent; */
-        /* width: 100%; */
         padding: 3em 1.75em 0 0;
-        /* padding-left: 0; */
-        
     }
-   
+
+    .more {
+        margin-top: 8rem;
+    } 
+
+    .btn-round {
+        background-color: #fff;
+        border-radius: 50%;
+        color: #0B0F19;
+        width: 30px;
+        height: 30px;
+    }
+
+    .chevron {
+        width: 50%;
+        margin: 7px 5px 5px 7px;
+    }
+
+    span {
+        color: var(--clr-body-text);
+    }
+
     .phone-img-container {
         display: block;
         width: 550px;
@@ -150,14 +167,7 @@ span {
             width: 100%;
         }
     }
-   
-    .more {
-        margin-top: 8rem;
-    }
 }
 
-.phone-img-container {
-    /* position: absolute; */
-}
 
 /* SHOWCASE END */

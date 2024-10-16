@@ -47,23 +47,37 @@ span {
 }
 
 .container {
-    width: 100%;
+    width: 120%;
     padding-inline: 1rem;
-    margin: 0 auto;
+    margin: auto;
     @media (width > 1400px) {
         max-width: 1100px;
     }
 }
 
-.d4 {
-    font-size: 3.5rem;
-    margin-top: 7rem;
+.h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--clr-heading);
+}
+
+.h5 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--clr-heading);
 }
 
 .text-lg {
-    font-size: 1rem;
+    font-size: 1.125rem;
+    font-weight: 400;
     color: var(--clr-body-text);
     margin-top: 1rem;
+}
+
+.text-m {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--clr-body-text);
 }
 
 .flex {
@@ -91,7 +105,6 @@ span {
 /* NAVBAR START */
 .main-nav {
     .container {
-        /* position: relative; */
         justify-content: space-between;
         padding-block: 0.7rem;
     }
@@ -119,8 +132,10 @@ span {
         height: 600px;
 
         .hero-text{
-            font-size: 3rem;
+            font-size: 3.5rem;
+            font-weight: 800;
             color: var(--clr-heading);
+            margin-top: 2px;
         }
     }
 
@@ -132,10 +147,14 @@ span {
 
     .store-btn {
         padding: 3em 1.75em 0 0;
+
+        img {
+            width: 100%;
+        }
     }
 
     .more {
-        margin-top: 8rem;
+        margin-top: 6rem;
     } 
 
     .btn-round {
@@ -183,6 +202,42 @@ span {
         padding-block: 90px;
     }
 }
-
-
 /* LOGOS END */
+
+/* APP FEATURES START */
+.features {
+    img {
+        width: 190%;
+    }
+
+    .features-contents {
+        padding-left: 300px;
+    }
+
+    .content-text {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--clr-gray-600);
+    }
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .features-card {
+        margin-top: 2rem;
+    }
+
+    .icon-container {
+        border-radius: 8%;
+    }
+
+    .text {
+        margin-left: 2rem;
+    }
+
+
+}
+
+/* APP FEATURES END */

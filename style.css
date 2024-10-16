@@ -56,7 +56,7 @@ span {
 }
 
 .h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: var(--clr-heading);
 }
@@ -204,6 +204,7 @@ span {
 }
 /* LOGOS END */
 
+
 /* APP FEATURES START */
 .features {
     img {
@@ -236,8 +237,45 @@ span {
     .text {
         margin-left: 2rem;
     }
-
-
 }
-
 /* APP FEATURES END */
+
+
+/* HOW DOES IT WORK START */
+.phone-section {
+    background-color: rgb(8, 0, 50, 0.1);
+    margin-top: 100px;
+
+    .h1 {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .flex {
+        justify-content: center;
+    }
+
+    .gallery-img{
+        padding: 10px 20px ;
+    }
+
+    .gallery-img-center {
+        padding: 10px 40px;
+    }
+
+    .section-content {
+        padding: 30px;
+        text-align: center;
+
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--clr-heading);
+        }
+    }
+    
+    .text-m {
+        padding: 10px;
+    }
+}
+/* HOW DOES IT WORK END */

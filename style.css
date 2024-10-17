@@ -61,6 +61,12 @@ span {
     color: var(--clr-heading);
 }
 
+.h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--clr-heading);
+}
+
 .h5 {
     font-size: 1.25rem;
     font-weight: 800;
@@ -78,6 +84,7 @@ span {
     font-size: 1rem;
     font-weight: 400;
     color: var(--clr-body-text);
+    margin-top: 20px;
 }
 
 .flex {
@@ -101,6 +108,10 @@ span {
     color: #fff;
 }
 
+.learn-btn {
+    margin: 5px 7px;
+    padding-right: 11px;
+}
 
 /* NAVBAR START */
 .main-nav {
@@ -207,6 +218,7 @@ span {
 
 /* APP FEATURES START */
 .features {
+
     img {
         width: 190%;
     }
@@ -220,6 +232,7 @@ span {
         font-weight: 400;
         color: var(--clr-gray-600);
     }
+
     .features-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -232,10 +245,14 @@ span {
 
     .icon-container {
         border-radius: 8%;
+
+        .text-m {
+            margin-top: 20px;
+        }
     }
 
     .text {
-        margin-left: 2rem;
+        margin-left: 3rem;
     }
 }
 /* APP FEATURES END */
@@ -243,7 +260,7 @@ span {
 
 /* HOW DOES IT WORK START */
 .phone-section {
-    background-color: rgb(8, 0, 50, 0.1);
+    background-color: var(--clr-gray-100);
     margin-top: 100px;
 
     .h1 {
@@ -279,3 +296,66 @@ span {
     }
 }
 /* HOW DOES IT WORK END */
+
+
+/* TRANSACTIONS START*/
+.transactions-section {
+
+    .transactions-content {
+        position: relative;
+
+        .transactions-text {
+            margin-top: 140px;
+            padding-top: 75px;
+
+            .transactions-title {
+                margin-bottom: 20px;
+            }
+
+            li {
+                margin-bottom: 15px;
+                svg {
+                    vertical-align: middle;
+                }
+    
+                .item-text {
+                    display: inline-block;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+
+        .balance-img {
+            display: block;
+            width: 550px;
+            position: absolute;
+            right: 5px;
+            top: 0;
+            bottom: 10px;
+        }
+
+        .contacts-img {
+            width: 100%;
+            margin-top: 15em;
+        }
+
+        .payments-content {
+            display: block;
+            width: 550px;
+            position: absolute;
+            right: 0;
+            top: 65px;
+
+            .payments-text {
+                display: flex;
+                padding: 20px 0;
+
+            }
+        }
+
+    }
+
+
+    
+}
+/* TRANSACTIONS END */

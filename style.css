@@ -84,7 +84,7 @@ span {
     font-size: 1rem;
     font-weight: 400;
     color: var(--clr-body-text);
-    margin-top: 20px;
+    margin-top: 2px;
 }
 
 .flex {
@@ -220,7 +220,7 @@ span {
 .features {
 
     img {
-        width: 190%;
+        width: 220%;
     }
 
     .features-contents {
@@ -303,6 +303,7 @@ span {
 
     .transactions-content {
         position: relative;
+        margin-bottom: 10em;
 
         .transactions-text {
             margin-top: 140px;
@@ -312,18 +313,22 @@ span {
                 margin-bottom: 20px;
             }
 
-            li {
-                margin-bottom: 15px;
-                svg {
-                    vertical-align: middle;
+            .info-text-transaction {
+                margin-bottom: 20px;
+
+                li {
+                    svg {
+                        vertical-align: middle;
+                    }
+        
+                    .item-text {
+                        display: inline-block;
+                        padding-bottom: 6px;
+                    }
                 }
-    
-                .item-text {
-                    display: inline-block;
-                    padding-bottom: 5px;
-                }
+     
             }
-        }
+       }
 
         .balance-img {
             display: block;
@@ -335,8 +340,7 @@ span {
         }
 
         .contacts-img {
-            width: 100%;
-            margin-top: 15em;
+            margin-top: 10em;
         }
 
         .payments-content {
@@ -352,10 +356,27 @@ span {
 
             }
         }
-
     }
-
-
-    
 }
 /* TRANSACTIONS END */
+
+
+/*  FEEDBACK START */
+.feedback {
+    background-color: var(--clr-gray-100);
+
+    .feedback-section {
+        .h1 {
+            padding-top: 70px;
+            text-align: left;
+        }
+        .feedback-img {
+            margin: 50px;
+            img {
+                width: 22em;
+            }
+        }
+    }
+}
+
+/* FEEDBACK END */

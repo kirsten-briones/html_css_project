@@ -43,7 +43,7 @@ ol, ul {
 }
  
 span {
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 .container {
@@ -85,6 +85,12 @@ span {
     font-weight: 400;
     color: var(--clr-body-text);
     margin-top: 2px;
+}
+
+.text-s {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--clr-body-text);
 }
 
 .flex {
@@ -380,3 +386,46 @@ span {
 }
 
 /* FEEDBACK END */
+
+
+/* FAQs START */
+.faq-section {
+
+    .faq-content {
+
+        .faq-text {
+            padding: 20px 0;
+        }
+
+        .contact-us {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            width: 25rem;
+
+            .contact-section {
+
+                border: 1px solid var(--clr-gray-300);
+                padding: 1rem;
+                border-radius: 5%;
+
+                .text-s {
+                    padding: 15px 0;
+                }
+
+                .contact-call-link {
+                    padding-right: 10px;
+                    font-size: 0.875rem;
+                    color: var(--clr-primary);
+                }
+
+                .contact-msg-link {
+                    padding-right: 10px;
+                    font-size: 0.875rem;
+                    color: #22C55E;
+                }
+            }
+        }
+    }
+}
+/* FAQs END */

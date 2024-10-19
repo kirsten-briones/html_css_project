@@ -18,7 +18,15 @@
                 </a>
                 <a class="nav-link" href="#">Features</a>
             </div>
-          
+            
+            <div class="darkmode-toggle flex align-center">
+                <p>Dark Mode</p>
+                <label class="toggle">
+                    <input type="checkbox" id="darkmode-switch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
             <div class="flex align-center">
                 <a href="#" class="flex btn btn-primary">
                     <img src="/images/icons/user.svg">
@@ -169,13 +177,13 @@
 
                 <div class="flex">
                     <div class="gallery-img">
-                        <img src="images/iphone12-budget.svg" alt="">
+                        <img src="images/iphone12-budget.svg" alt="An Iphone showing the budget">
                     </div>
                     <div class="gallery-img-center">
-                        <img src="images/iphone12-card.svg" alt="">
+                        <img src="images/iphone12-card.svg" alt="An Iphone showing the card">
                     </div>
                     <div class="gallery-img">
-                        <img src="images/iphone12-balance.svg" alt="">
+                        <img src="images/iphone12-balance.svg" alt="An Iphone showing the balance">
                     </div>
                 </div>
 
@@ -214,7 +222,7 @@
                         <div class="flex align-center">
                             <a href="#" class="flex btn btn-primary">
                                 <span class="learn-btn">Learn more</span>
-                                <img src="/images/icons/right-arrow.svg">
+                                <img src="/images/icons/right-arrow.svg" alt="Right arrow">
                             </a>
                         </div>
                     </div>
@@ -241,7 +249,7 @@
                         <div class="flex align-center">
                             <a href="#" class="flex btn btn-primary">
                                 <span class="learn-btn">Learn more</span>
-                                <img src="/images/icons/right-arrow.svg">
+                                <img src="/images/icons/right-arrow.svg" alt="Right arrow">
                             </a>
                         </div> 
                     </div>
@@ -255,8 +263,8 @@
                         <h2 class="h1">Clients are <br> Loving Our App</h2>
                     </div>
                     <div class="feedback-img flex">
-                        <img src="/images/feedback1.svg" alt="">
-                        <img src="/images/feedback2.svg" alt="">
+                        <img src="/images/feedback1.svg" alt="A image showing a review of the product">
+                        <img src="/images/feedback2.svg" alt="A image showing a review of the product">
                     </div>
                 </div>
         </section>
@@ -276,7 +284,7 @@
                             <p class="text-s">Still have question?</p>
                             <a href="#" class="flex">
                                 <span class="contact-call-link">Contact us</span>
-                                <img src="/images/icons/icon-right-purple.svg" alt="">
+                                <img src="/images/icons/icon-right-purple.svg" alt="Purple right arrow">
                             </a>
                         </div>
                         <div class="contact-section">
@@ -284,7 +292,7 @@
                             <p class="text-s">Don't like phone calls?</p>
                             <a href="#" class="flex">
                                 <span class="contact-msg-link ">Contact us</span>
-                                <img src="/images/icons/icon-right-green.svg" alt="">
+                                <img src="/images/icons/icon-right-green.svg" alt="Green right arrow">
                             </a>
                         </div>
                     </div>
@@ -333,10 +341,30 @@
                 </div>
             </div>
         </section>
+
+        <section class="subscribe" aria-label="subscribe section">
+            <div class="container">
+                <div class="subscribe-hero flex align-center">
+                    <div class="subscribe-text flex align-center">
+                        <img src="/images/icons/notification.svg" alt="">
+                        <p class="h5">Subscribe to our newsletter to stay informed about latest updates</p>
+                    </div>
+                    <form>
+                        <div class="subscribe-form flex align-center">
+                            <i class="email-icon fa-regular fa-envelope"></i>
+                            <input class="subscribe-input"  type="email" name="Email" placeholder="Your Email">
+                            <button class="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>© 2024 Silicon. All rights reserved. Credit MadrasThemes</p>
+        <div class="credit-footer">
+            <p>© 2024 Silicon. All rights reserved. Credit MadrasThemes</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -42,9 +42,6 @@ ol, ul {
     display: inline-block;
 }
  
-span {
-    /* padding-left: 10px; */
-}
 
 .container {
     width: 120%;
@@ -111,7 +108,7 @@ span {
 
 .btn-primary {
     background-color: var(--clr-primary);
-    color: #fff;
+    color: var(--clr-bg);
 }
 
 .learn-btn {
@@ -125,17 +122,63 @@ span {
         justify-content: space-between;
         padding-block: 0.7rem;
     }
+
+    span {
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        color: var(--clr-navigation);
+        font-weight: 600;
+        padding-left: 2rem;
+    }
+    
+    .nav-link:hover {
+        color: var(--clr-primary);
+    }
+
+    .darkmode-toggle {
+        position: relative;
+        margin-left: 30rem;
+        gap: 1rem;
+    }
+
+    .toggle {
+        position: relative;
+        flex-shrink: 0;
+        width: 46px;
+        height: 24px;
+        display: inline-block;
+
+        input[type="checkbox"] {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+
+        .slider {
+            position: absolute;
+            inset: 0;
+            background-color: var(--clr-gray-600);
+            border-radius: 100vw;
+        }
+
+        .slider::after {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            content: '';
+            height: calc(100% - 4px);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: var(--clr-bg);
+        }
+    }
 }
 
-.nav-link {
-    color: var(--clr-navigation);
-    font-weight: 600;
-    padding-left: 2rem;
-}
 
-.nav-link:hover {
-    color: var(--clr-primary);
-}
+
+
 /* NAVBAR END */
 
 
@@ -175,7 +218,7 @@ span {
     } 
 
     .btn-round {
-        background-color: #fff;
+        background-color: var(--clr-bg);
         border-radius: 50%;
         width: 30px;
         height: 30px;
@@ -431,67 +474,152 @@ span {
                     color: #22C55E;
                 }
             }
-        }  
+        }
+
+        .faq-list-accordion {
+            display: block;
+            width: 550px;
+            position: absolute;
+            right: 10px; 
+            top: 10px;
+
+            .accordion {
+                width: 33rem;
+                border: none;
+                margin-top: 10px;
+                box-shadow: 0 3px 4px  1px var(--clr-gray-200);
+                border-radius: 8px;
+            
+                .accordion-content {
+                    width: 31rem;
+                    cursor: pointer;
+                    margin: 10px;
+                    border: none;
+                    padding: 10px 10px 10px 10px;
+                    font-size: 0.9rem;
+                    background-color: var(--clr-bg);
+                    justify-content: space-between;
+                    text-align: left;
+                }
+            
+                .btn-up {
+                    color: var(--clr-bg);
+                    border: none;
+                    background-color: var(--clr-primary);
+                    border-radius: 50%;
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 0.7rem;
+                    padding: 10px;
+                    /* margin-right: 30px; */
+                }
+            
+                .btn-down {
+                    color: black;
+                    border: none;
+                    background-color: var(--clr-gray-200);
+                    border-radius: 50%;
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 0.7rem;
+                    padding: 10px;;
+                }
+    
+                .accordion-text {
+                    margin: 0 10px;
+                    padding: 0 10px 20px 10px;
+                }
+            }
+        
+        }
     }
 
 }
 
 
-.faq-list-accordion {
-    display: block;
-    width: 550px;
-    position: absolute;
-    right: 10px; 
-    top: 10px;
 
 
-}
 
-.accordion {
-    width: 33rem;
-    border: none;
-    margin-top: 10px;
-    box-shadow: 0 3px 4px  1px var(--clr-gray-200);
-    border-radius: 8px;
 
-    .accordion-content {
-        width: 31rem;
-        cursor: pointer;
-        margin: 10px;
-        border: none;
-        padding: 10px 10px 10px 10px;
-        font-size: 0.9rem;
-        background-color: #fff;
-        justify-content: space-between;
-        text-align: left;
-    }
 
-    .btn-up {
-        color: #fff;
-        border: none;
-        background-color: var(--clr-primary);
-        border-radius: 50%;
-        width: 2rem;
-        height: 2rem;
-        font-size: 0.7rem;
-        padding: 10px;
-        /* margin-right: 30px; */
-    }
-
-    .btn-down {
-        color: black;
-        border: none;
-        background-color: var(--clr-gray-200);
-        border-radius: 50%;
-        width: 2rem;
-        height: 2rem;
-        font-size: 0.7rem;
-        padding: 10px;;
-    }
-}
-
-.accordion-text {
-    margin: 0 10px;
-    padding: 0 10px 20px 10px;
-}
 /* FAQs END */
+
+
+/* SUBSCRIBE START */
+.subscribe {
+
+    .container {
+        background-color: var(--clr-gray-100);
+        border-radius: 5px;
+    }
+
+    .subscribe-hero {
+        height: 100px;
+        margin-top: 18rem;
+        padding: 75px;
+        justify-content: space-between;
+    }
+
+    .subscribe-text {
+        margin: 10px;
+
+        .h5 {
+            padding-left: 15px;
+        }
+    }
+
+    .subscribe-form{
+        height: 50px;
+        /* border: 0.7px solid var(--clr-gray-400); */
+        outline: none;
+        background-color: var(--clr-bg);
+        border-radius: 8px;
+        font-size: 1.2rem;
+    }
+
+    .email-icon {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .subscribe-input {
+        width: 250px;
+        height: 50px;
+        outline: none;
+        border-radius: 8px 0 0 8px;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: var(--clr-gray-500);
+    }
+
+    .subscribe-input::placeholder,
+    .email-icon {
+        color: var(--clr-gray-500);
+    }
+
+    .submit {
+        width: 150px;
+        height: 50px;
+        background-color: var(--clr-primary);
+        outline: none;
+        border: none;
+        border-radius: 0 8px 8px 0;
+        color: var(--clr-bg);
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+}
+/* SUBSCRIBE END */
+
+
+/* FOOTER START */
+.credit-footer {
+    margin: 3rem;;
+    font-size: 0.875rem;
+    color: var(--clr-gray-600);
+    text-align: center;
+}
+/* FOOTER END */
